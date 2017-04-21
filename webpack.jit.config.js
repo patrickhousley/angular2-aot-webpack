@@ -4,6 +4,8 @@ let path = require('path');
 module.exports = {
   entry: require('./webpack/entry.jit'),
 
+  externals: require('./webpack/externals'),
+
   context: path.join(process.cwd(), 'src'),
 
   output: require('./webpack/output'),
